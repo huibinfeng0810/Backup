@@ -1,0 +1,13 @@
+a.out
+build/
+cmake_install.cmake
+CMakeFiles/
+CMakeCache.txt
+Makefile
+Testing/
+*.o
+*.swp
+*\tags
+*.cmake
+.cproject
+.project
