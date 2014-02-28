@@ -1,0 +1,31 @@
+Step 1 - Download Android SDK from the Android Developers website and install with USB drivers.
+
+Step 2 - Download Fastboot and extract it to android-sdk-windowsplatform-tools directory. Create a new directory if it does not exist.
+
+NOTE: Skip Steps 1 and 2 if they are already installed.
+
+Step 3 - Download SuperSU v1.69.zip and copy it to platform-tools folder.
+
+Step 4 - Then Power off the phone.
+
+Step 5 -  Download TWRP 2.6.3.3 and copy it to the android-sdk-windowsplatform-tools directory on your computer.
+
+Step 6 - Connect the phone to computer via USB cable.
+
+Step 7 - Reboot Nexus 4 in Fastboot Mode. To do so, browse to platform-tools folder under SDK and launch Command Prompt (hold Shift with Right-click and then choose Open Command Prompt). Now type: 'adb reboot bootloader' and press enter.
+
+Step 8 - Then enter the following command to flash TWRP recovery via Command Prompt: fastboot flash recovery openrecovery-twrp-2.6.3.3-mako.img
+
+Step 9 - Wait until TWRP recovery is completely flashed and then enter the following command to reboot the phone in recovery mode:
+
+adb reboot recovery
+
+Step 10 - Go to Advanced option in TWRP recovery and ensure the device is still connected to the computer.
+
+Step 11 - Choose ADB Sideload option and then enter the command line:adb sideload UPDATE-SuperSU-v1.69.zip
+
+Step 12 - Wait until the installation process completes and then reboot the phone in Normal mode.
+
+Step 13 - Disconnect the phone from computer. Launch Google Play Store on the phone and update SuperSU.
+
+Your Nexus 4 E960 is now successfully rooted on Android 4.4 KRT16O KitKat with TWRP recovery installed. Check for the SuperSU app in your apps list to verify root access is working.
